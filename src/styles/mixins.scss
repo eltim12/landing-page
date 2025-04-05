@@ -1,0 +1,35 @@
+
+// // Define breakpoints
+// $breakpoints: (
+//   'xs': 0px,
+//   'sm': 576px,
+//   'md': 768px,
+//   'lg': 992px,
+//   'xl': 1200px);
+
+// // Mixin for media queries
+// @mixin respond-to($breakpoint) {
+//   @if map-has-key($breakpoints, $breakpoint) {
+//     @media (min-width: map-get($breakpoints, $breakpoint)) {
+//       @content;
+//     }
+//   }
+
+//   @else {
+//     @warn "Unfortunately, no value could be found for `#{$breakpoint}` in `$breakpoints` map.";
+//   }
+// }
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == xs {
+    @media (max-width: 575.98px) { @content; }
+  } @else if $breakpoint == sm {
+    @media (max-width: 767.98px) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: 991.98px) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: 1199.98px) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: 1200px) { @content; }
+  }
+}
