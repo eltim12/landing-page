@@ -36,7 +36,6 @@
 
       <div class="approach-section d-flex flex-column justify-center align-center">
         <GradientBackgroundRight />
-        <!-- <GradientBackgroundLeft /> -->
         <div class="approach-content">
           <v-row>
             <v-col cols="12">

@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     updateWindowWidth() {
-      this.windowWidth = window.innerWidth; // Update on resize
+      this.windowWidth = window.innerWidth;
     },
     openMenu() {
       this.sheet = true;

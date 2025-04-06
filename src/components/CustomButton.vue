@@ -58,18 +58,10 @@ const props = defineProps({
   &:hover {
     background-color: white;
     color: black;
-
-    .icon-arrow {
-      filter: invert(0) sepia(1) saturate(10000%) hue-rotate(0deg) brightness(0);
-    }
   }
 
   &:active {
     transform: scale(0.95);
   }
-}
-
-.icon-arrow {
-  transition: filter 0.6s ease;
 }
 </style>

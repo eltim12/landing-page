@@ -1,24 +1,5 @@
 
 // // Define breakpoints
-// $breakpoints: (
-//   'xs': 0px,
-//   'sm': 576px,
-//   'md': 768px,
-//   'lg': 992px,
-//   'xl': 1200px);
-
-// // Mixin for media queries
-// @mixin respond-to($breakpoint) {
-//   @if map-has-key($breakpoints, $breakpoint) {
-//     @media (min-width: map-get($breakpoints, $breakpoint)) {
-//       @content;
-//     }
-//   }
-
-//   @else {
-//     @warn "Unfortunately, no value could be found for `#{$breakpoint}` in `$breakpoints` map.";
-//   }
-// }
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == xs {
